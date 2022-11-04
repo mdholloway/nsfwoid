@@ -15,7 +15,7 @@ python3 app.py
 
 Dockerfile generation and Docker image creation is supported with [Blubber].
 
-**Note:** Currently broken without patching Blubber; see https://phabricator.wikimedia.org/T227919. The Blubber fork branch at https://github.com/mdholloway/blubber/tree/python-fix contains a commit adding the `use-system-flag` declaration used in the Blubberfile here.
+**Note:** Currently broken without patching Blubber; see https://phabricator.wikimedia.org/T227919. The Blubber fork branch at https://github.com/mdholloway/blubber/tree/python-fix is updated to support the `use-system-flag` declaration used in the Blubberfile here.
 
 ## API usage
 
