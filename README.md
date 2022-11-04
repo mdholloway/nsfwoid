@@ -1,24 +1,21 @@
 # nsfwoid
 
-This is a fork of the [open_nsfw--][] project, updated for use in Wikimedia production. The project is originally based on Yahoo's [open_nsfw][].
+This is a fork of the [open_nsfw--][] project, productionized for Wikimedia. The project is originally based on Yahoo's [open_nsfw][].
 
-It provides image NSFW likelihood scoring as a web service.
+It provides image NSFW likelihood scoring as a service.
 
 ## Running the service
 
 ### Quick start
-To run the service as a local Python process:
 ```
 python3 app.py
 ```
 
 ### Dockerization via Blubber
 
-Dockerfile generation and Docker image creation is supported with Wikimedia's Blubber tool. See the [project documentation][Blubber] for details.
+Dockerfile generation and Docker image creation is supported with [Blubber].
 
-**Note:** Currently broken without patching Blubber; see https://phabricator.wikimedia.org/T227919.
-
-The Blubber fork branch at https://github.com/mdholloway/blubber/tree/python-fix contains the commit adding the `use-system-flag` declaration used in the Blubberfile here, cherry-picked on top of the latest Debian release.
+**Note:** Currently broken without patching Blubber; see https://phabricator.wikimedia.org/T227919. The Blubber fork branch at https://github.com/mdholloway/blubber/tree/python-fix contains a commit adding the `use-system-flag` declaration used in the Blubberfile here.
 
 ## API usage
 
@@ -34,3 +31,4 @@ curl -d 'url=https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia
 [docker]: https://docs.docker.com/engine/installation/
 [dpkg]: https://packages.debian.org/sid/docker.io
 [Blubber]: https://wikitech.wikimedia.org/wiki/Blubber
+[User Guide]: https://wikitech.wikimedia.org/wiki/Blubber/User_Guide
